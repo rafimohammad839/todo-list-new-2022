@@ -16,8 +16,8 @@ function App() {
 
   const deleteItem = (id) => {
     setTodos((prev) => {
-      return prev.filter((_, index) => {
-        return index !== id;
+      return prev.filter((item) => {
+        return item.id !== id;
       })
     })
   }
